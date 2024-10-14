@@ -5,9 +5,10 @@ struct coordenadas{
     float x,y;
 };
 
-void quienSoy(){
+void presentacion(){
     cout<<"Archivo para calcular la distancia entre dos coordenadas"<<endl;
     cout<<"Autor: Juan Rafael Gonzalez Diaz (RAF28)"<<endl;
+    cout<<"Fecha: 14/10/2024"<<endl;
 }
 
 float distancia(coordenadas _c1,coordenadas _c2){
@@ -15,7 +16,7 @@ float distancia(coordenadas _c1,coordenadas _c2){
 }
 
 int main(){
-    quienSoy();
+    presentacion();
 	coordenadas c1,c2;
 	cin>>c1.x>>c1.y>>c2.x>>c2.y;
 	cout<<fixed<<setprecision(6)<<distancia(c1,c2);
