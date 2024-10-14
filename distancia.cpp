@@ -9,9 +9,11 @@ void presentacion(){
 	cout<<"Archivo para calcular la distancia entre dos coordenadas."<<endl;
 	cout<<"Autor: Juan Rafael Gonzalez Diaz (RAF28)."<<endl;
 	cout<<"Fecha: 14/10/2024."<<endl;
+	cout<<"_________________________________________________________"<<endl;
 }
 
 void despedida(){
+	cout<<"_________________________________________________________"<<endl;
 	cout<<"Gracias por usar el codigo, suerte en la vida. :D"<<endl;
 	cout<<"Codeforces: RAF28"<<endl;
 	cout<<"OmegaUp: -TyphlosionParaPresidente-"<<endl;
