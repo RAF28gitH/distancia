@@ -28,7 +28,11 @@ float distancia(coordenadas _c1,coordenadas _c2){
 int main(){
 	presentacion();
 	coordenadas c1,c2;
-	cin>>c1.x>>c1.y>>c2.x>>c2.y;
+	if(!(cin >> c1.x >> c1.y >> c2.x >> c2.y)){
+		cout<<"Una de las coordenadas ingresadas tiene algún error."<<endl;
+		despedida();
+		return 0;
+	}
 	cout<<fixed<<setprecision(6)<<"Distancia: "<<distancia(c1,c2)<<endl;
 	despedida();
 	return 0;
