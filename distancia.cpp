@@ -4,11 +4,18 @@ using namespace std;
 struct coordenadas{
     float x,y;
 };
+
+void quienSoy(){
+    cout<<"Archivo para calcular la distancia entre dos coordenadas"<<endl;
+    cout<<"Autor: Juan Rafael Gonzalez Diaz (RAF28)"<<endl;
+}
+
 float distancia(coordenadas _c1,coordenadas _c2){
     return sqrt(pow((_c2.x-_c1.x),2)+pow((_c2.y-_c1.y),2));
 }
 
 int main(){
+    quienSoy();
 	coordenadas c1,c2;
 	cin>>c1.x>>c1.y>>c2.x>>c2.y;
 	cout<<fixed<<setprecision(6)<<distancia(c1,c2);
